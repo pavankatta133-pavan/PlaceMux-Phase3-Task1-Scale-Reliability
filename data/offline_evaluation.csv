@@ -1,0 +1,6 @@
+student_id,job_id,expected_score
+student_001,job_001,100
+student_002,job_002,50
+student_003,job_003,33.33
+student_004,job_004,100
+student_005,job_005,0

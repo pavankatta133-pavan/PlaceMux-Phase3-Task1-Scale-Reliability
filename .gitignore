@@ -1,0 +1,8 @@
+@"
+myenv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+post_launch_health/logs/*.csv
+"@ | Set-Content .gitignore

@@ -1,0 +1,64 @@
+{
+    "project": "Sprint A - Scale & Reliability",
+    "phase": "Phase 3",
+    "task": "Task 1 - Post-Launch Health",
+
+    "backlog": [
+        {
+            "backlog_id": "PH3-001",
+            "priority": "P1",
+            "title": "Implement user recommendation feedback collection",
+            "source_defect": "INT-001",
+            "owner": "Product Analytics",
+            "action": "Capture relevant, not relevant, clicked, applied and dismissed events.",
+            "acceptance_criteria": [
+                "Feedback events are recorded with request_id",
+                "Feedback is associated with student_id and job_id",
+                "Feedback data can be queried for model evaluation"
+            ],
+            "status": "Planned"
+        },
+        {
+            "backlog_id": "PH3-002",
+            "priority": "P1",
+            "title": "Build production relevance evaluation dataset",
+            "source_defect": "INT-003",
+            "owner": "ML Engineering",
+            "action": "Create a labelled dataset from genuine post-launch interaction feedback.",
+            "acceptance_criteria": [
+                "Real user feedback is linked to predictions",
+                "Evaluation dataset is versioned",
+                "Online relevance metrics can be calculated reproducibly"
+            ],
+            "status": "Planned"
+        },
+        {
+            "backlog_id": "PH3-003",
+            "priority": "P2",
+            "title": "Review low-score recommendation handling",
+            "source_defect": "INT-002",
+            "owner": "Recommendation Engineering",
+            "action": "Review ranking thresholds and presentation of low-confidence recommendations.",
+            "acceptance_criteria": [
+                "Low-score recommendations are identified",
+                "Ranking threshold is documented",
+                "Low-confidence recommendations have an appropriate user-facing treatment"
+            ],
+            "status": "Planned"
+        },
+        {
+            "backlog_id": "PH3-004",
+            "priority": "P2",
+            "title": "Increase post-launch evaluation sample size",
+            "source_defect": "INT-004",
+            "owner": "ML Platform",
+            "action": "Continue collecting production-safe interaction logs and define minimum sample thresholds.",
+            "acceptance_criteria": [
+                "Minimum evaluation sample threshold is documented",
+                "Monitoring reports sample size",
+                "Automated health decisions require sufficient observations"
+            ],
+            "status": "Planned"
+        }
+    ]
+}

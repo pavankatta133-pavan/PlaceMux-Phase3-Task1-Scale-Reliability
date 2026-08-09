@@ -1,0 +1,57 @@
+{
+    "project": "Sprint A - Scale & Reliability",
+    "phase": "Phase 3",
+    "task": "Task 1 - Post-Launch Health",
+    "total_defects": 4,
+    "ranking_method": "Severity first, followed by priority",
+    "defects": [
+        {
+            "defect_id": "INT-001",
+            "title": "User feedback is missing from live predictions",
+            "severity": "Medium",
+            "priority": "P1",
+            "evidence": "5 of 5 logged predictions contain no user feedback.",
+            "likely_cause": "The prediction API currently logs predictions but does not yet collect explicit user relevance feedback.",
+            "business_impact": "The team cannot reliably measure whether recommendations are useful to users after launch.",
+            "owner": "ML Platform / Product Analytics",
+            "recommended_action": "Add recommendation feedback events such as relevant, not relevant, clicked, applied and dismissed.",
+            "status": "Open"
+        },
+        {
+            "defect_id": "INT-003",
+            "title": "Production relevance labels are unavailable",
+            "severity": "Medium",
+            "priority": "P1",
+            "evidence": "Current evaluation uses benchmark expected scores rather than genuine post-launch user relevance labels.",
+            "likely_cause": "The system has prediction logging but does not yet maintain a labelled feedback dataset for online evaluation.",
+            "business_impact": "Offline-online agreement cannot yet be interpreted as real user recommendation accuracy.",
+            "owner": "ML Engineering / Product Analytics",
+            "recommended_action": "Build a feedback-labelled evaluation dataset and calculate precision, recall, ranking quality or other agreed relevance metrics on real interactions.",
+            "status": "Open"
+        },
+        {
+            "defect_id": "INT-002",
+            "title": "Low-score recommendation requires review",
+            "severity": "Low",
+            "priority": "P2",
+            "evidence": "2 of 5 predictions have a match score below 50.",
+            "likely_cause": "Low overlap between student skills and required job skills.",
+            "business_impact": "Low-quality matches may reduce recommendation usefulness if they are surfaced too prominently.",
+            "owner": "Recommendation Engineering",
+            "recommended_action": "Review ranking thresholds and consider filtering or explaining low-confidence recommendations.",
+            "status": "Open"
+        },
+        {
+            "defect_id": "INT-004",
+            "title": "Live evaluation sample is too small",
+            "severity": "Low",
+            "priority": "P2",
+            "evidence": "Only 5 live predictions are currently available for analysis.",
+            "likely_cause": "The post-launch monitoring pipeline has only recently been activated.",
+            "business_impact": "Small samples can make model-health metrics unstable and may hide rare failure patterns.",
+            "owner": "ML Platform",
+            "recommended_action": "Continue collecting production-safe interaction logs and define minimum sample thresholds before automated health decisions.",
+            "status": "Open"
+        }
+    ]
+}
