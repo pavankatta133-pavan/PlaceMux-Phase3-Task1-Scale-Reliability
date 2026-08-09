@@ -1,0 +1,13 @@
+{
+    "timestamp": "2026-08-09T16:09:26.375034",
+    "model_version": "phase3_matching_v1",
+    "overall_status": "ALERT",
+    "alert_count": 1,
+    "alerts": [
+        {
+            "alert": "LOW_PREDICTION_QUALITY",
+            "severity": "CRITICAL",
+            "message": "Minimum prediction score 0.0 is below the quality threshold 50.0."
+        }
+    ]
+}

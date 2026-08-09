@@ -1,0 +1,26 @@
+{
+    "service": "PlaceMux AI Recommendation Service",
+    "model_version": "phase3_matching_v1",
+
+    "slo": {
+        "p95_latency_ms": 500,
+        "availability_percent": 99.0,
+        "minimum_quality_score": 50.0
+    },
+
+    "alert_thresholds": {
+        "latency_warning_ms": 400,
+        "latency_critical_ms": 500,
+        "minimum_quality_score": 50.0,
+        "score_distribution_min_unique": 2,
+        "constant_score_tolerance": 0.01
+    },
+
+    "error_budget": {
+        "availability_target_percent": 99.0,
+        "latency_target_percent": 95.0,
+        "quality_target_percent": 95.0
+    },
+
+    "owner": "ML Engineering"
+}

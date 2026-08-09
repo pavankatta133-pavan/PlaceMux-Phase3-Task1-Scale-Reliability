@@ -1,0 +1,6 @@
+timestamp,request_id,student_id,job_id,predicted_score,rank,model_version,latency_ms,prediction_status,user_feedback
+2026-08-08T14:46:23.175709,209004c3-a7e8-48cb-b7ec-a19e05ef8aa2,student_001,job_001,100.0,1,phase3_matching_v1,0.41,success,
+2026-08-08T14:47:12.720917,c83852d9-3a66-434f-94e4-f190883462c7,student_002,job_002,50.0,2,phase3_matching_v1,0.2,success,
+2026-08-08T14:47:20.217174,1e45bbf1-e6b4-4962-9d90-40079718f479,student_003,job_003,33.33,2,phase3_matching_v1,0.13,success,
+2026-08-08T14:47:27.287862,c156bdb7-d8be-4424-8441-7116a7c2a4ee,student_004,job_004,100.0,1,phase3_matching_v1,0.15,success,
+2026-08-08T14:47:35.284499,39614574-2466-4686-937d-c8bb1d7aa8c8,student_005,job_005,0.0,2,phase3_matching_v1,0.16,success,

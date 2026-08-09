@@ -1,0 +1,33 @@
+{
+    "service": "PlaceMux AI Recommendation Service",
+    "model_version": "phase3_matching_v1",
+    "metrics": {
+        "total_requests": 5,
+        "successful_requests": 5,
+        "availability_percent": 100.0,
+        "p95_latency_ms": 0.37,
+        "average_latency_ms": 0.21,
+        "average_score": 56.67,
+        "minimum_score": 0.0,
+        "maximum_score": 100.0,
+        "unique_scores": 4
+    },
+    "slo_results": {
+        "latency_slo": {
+            "target_ms": 500,
+            "actual_p95_ms": 0.37,
+            "status": "PASS"
+        },
+        "availability_slo": {
+            "target_percent": 99.0,
+            "actual_percent": 100.0,
+            "status": "PASS"
+        },
+        "quality_slo": {
+            "minimum_score": 50.0,
+            "observed_minimum": 0.0,
+            "status": "BREACH"
+        }
+    },
+    "overall_status": "SLO_BREACH"
+}
