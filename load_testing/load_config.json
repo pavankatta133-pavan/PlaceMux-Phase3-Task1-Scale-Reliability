@@ -1,0 +1,27 @@
+{
+    "target": {
+        "host": "127.0.0.1",
+        "port": 5000,
+        "endpoint": "/api/post-launch/predict"
+    },
+
+    "load_profile": {
+        "qps_levels": [
+            1,
+            2,
+            5,
+            10,
+            20,
+            50
+        ],
+
+        "requests_per_level": 20
+    },
+
+    "success_criteria": {
+        "max_p95_latency_ms": 500,
+        "minimum_success_rate_percent": 99
+    },
+
+    "headroom_target_percent": 30
+}

@@ -1,0 +1,77 @@
+{
+    "experiment": "Horizontal Scale & Load Readiness",
+    "data_source": "Real production-style prediction logs",
+    "success_criteria": {
+        "max_p95_latency_ms": 500,
+        "minimum_success_rate_percent": 99
+    },
+    "headroom_target_percent": 30,
+    "results": [
+        {
+            "target_qps": 1,
+            "actual_qps": 1.0,
+            "requests": 20,
+            "successful": 20,
+            "failed": 0,
+            "success_rate_percent": 100.0,
+            "average_latency_ms": 16.51,
+            "p95_latency_ms": 42.06,
+            "max_latency_ms": 52.35
+        },
+        {
+            "target_qps": 2,
+            "actual_qps": 2.0,
+            "requests": 20,
+            "successful": 20,
+            "failed": 0,
+            "success_rate_percent": 100.0,
+            "average_latency_ms": 9.45,
+            "p95_latency_ms": 21.03,
+            "max_latency_ms": 27.7
+        },
+        {
+            "target_qps": 5,
+            "actual_qps": 5.0,
+            "requests": 20,
+            "successful": 20,
+            "failed": 0,
+            "success_rate_percent": 100.0,
+            "average_latency_ms": 13.08,
+            "p95_latency_ms": 36.45,
+            "max_latency_ms": 100.78
+        },
+        {
+            "target_qps": 10,
+            "actual_qps": 10.0,
+            "requests": 20,
+            "successful": 20,
+            "failed": 0,
+            "success_rate_percent": 100.0,
+            "average_latency_ms": 10.26,
+            "p95_latency_ms": 32.12,
+            "max_latency_ms": 40.78
+        },
+        {
+            "target_qps": 20,
+            "actual_qps": 19.98,
+            "requests": 20,
+            "successful": 20,
+            "failed": 0,
+            "success_rate_percent": 100.0,
+            "average_latency_ms": 12.58,
+            "p95_latency_ms": 27.87,
+            "max_latency_ms": 28.29
+        },
+        {
+            "target_qps": 50,
+            "actual_qps": 48.49,
+            "requests": 20,
+            "successful": 20,
+            "failed": 0,
+            "success_rate_percent": 100.0,
+            "average_latency_ms": 14.58,
+            "p95_latency_ms": 27.67,
+            "max_latency_ms": 29.86
+        }
+    ]
+}

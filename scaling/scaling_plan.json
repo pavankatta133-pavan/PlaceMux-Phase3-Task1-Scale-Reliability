@@ -1,0 +1,54 @@
+{
+    "strategy": "Horizontal scaling with autoscaling",
+
+    "primary_trigger": {
+        "metric": "Requests per second per instance",
+        "action": "Add inference instances when sustained traffic approaches the safe operating capacity"
+    },
+
+    "secondary_triggers": [
+        {
+            "metric": "P95 inference latency",
+            "threshold": "Approaching the configured SLO"
+        },
+        {
+            "metric": "Error rate",
+            "threshold": "Above the configured reliability threshold"
+        },
+        {
+            "metric": "CPU utilization",
+            "threshold": "Sustained high utilization"
+        }
+    ],
+
+    "scale_out": {
+        "action": "Increase inference service replicas",
+        "goal": "Keep traffic per instance below the measured safe capacity"
+    },
+
+    "scale_in": {
+        "action": "Reduce replicas during sustained low traffic",
+        "protection": "Do not scale below the minimum production replica count"
+    },
+
+    "batching": {
+        "enabled": false,
+        "reason": "Online recommendation requests require low-latency responses"
+    },
+
+    "precomputation": {
+        "enabled": false,
+        "future_use": "Can be introduced for repeated or cacheable recommendation requests"
+    },
+
+    "failure_handling": {
+        "model_unavailable": "Return degraded response",
+        "recommendation_available": false,
+        "avoid_cascading_failure": true
+    },
+
+    "capacity_policy": {
+        "source": "Measured load-test results",
+        "headroom_target_percent": 30
+    }
+}
