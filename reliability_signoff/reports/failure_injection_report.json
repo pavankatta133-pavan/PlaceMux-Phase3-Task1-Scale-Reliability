@@ -1,0 +1,22 @@
+{
+    "task": "Phase 3 Task 5",
+    "test_type": "controlled_failure_injection",
+    "http_status": 503,
+    "latency_ms": 6.0,
+    "fallback_response": {
+        "error_code": "SYNTHETIC_MODEL_FAILURE",
+        "fallback": true,
+        "job_id": "task5_failure_job_001",
+        "latency_ms": 0.12,
+        "message": "Synthetic model failure injected for Task 5 reliability testing.",
+        "model_version": "phase3_matching_v1",
+        "predicted_score": null,
+        "rank": null,
+        "recommendation_available": false,
+        "request_id": "8b1a949d-a948-494e-b7c6-0802c89da298",
+        "status": "fallback",
+        "student_id": "task5_failure_student_001"
+    },
+    "failure_injection_pass": true,
+    "interpretation": "Controlled model failure returned a safe fallback response without making a recommendation."
+}

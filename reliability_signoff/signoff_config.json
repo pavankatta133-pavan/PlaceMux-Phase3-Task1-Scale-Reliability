@@ -1,0 +1,24 @@
+{
+    "project": "Sprint A - Scale & Reliability",
+    "phase": "Phase 3",
+    "task": "Task 5 - Reliability Sign-off & Scale Integration",
+
+    "slos": {
+        "minimum_success_rate_percent": 99.0,
+        "maximum_p95_latency_ms": 500.0
+    },
+
+    "capacity": {
+        "validated_max_qps": 50,
+        "operational_headroom_percent": 30
+    },
+
+    "requirements": {
+        "normal_prediction": true,
+        "observability": true,
+        "load_testing": true,
+        "slo_validation": true,
+        "failure_injection": true,
+        "fallback_validation": true
+    }
+}

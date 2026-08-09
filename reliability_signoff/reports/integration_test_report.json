@@ -1,0 +1,47 @@
+{
+    "task": "Phase 3 Task 5",
+    "test_type": "normal_integration",
+    "normal_prediction": {
+        "status_code": 200,
+        "latency_ms": 5.32,
+        "successful": true,
+        "response": {
+            "explanation": "The recommendation score is based on the percentage of required job skills present in the student profile.",
+            "fallback": false,
+            "job_id": "task5_job_001",
+            "latency_ms": 0.08,
+            "model_version": "phase3_matching_v1",
+            "predicted_score": 100.0,
+            "rank": 1,
+            "recommendation_available": true,
+            "request_id": "ac0e1353-314b-4649-9d06-0ea20723a6b0",
+            "status": "success",
+            "student_id": "task5_student_001"
+        }
+    },
+    "explanation": {
+        "status_code": 200,
+        "successful": true,
+        "response": {
+            "explanation": {
+                "matched_skill_count": 3,
+                "matched_skills": [
+                    "machine learning",
+                    "python",
+                    "sql"
+                ],
+                "missing_skills": [],
+                "reason": "Recommendation score is based on the percentage of required job skills matched by the student.",
+                "required_skill_count": 3
+            },
+            "job_id": "task5_job_001",
+            "model_version": "phase3_matching_v1",
+            "predicted_score": 100.0,
+            "recommendation": "Highly Recommended",
+            "recommendation_available": true,
+            "status": "success",
+            "student_id": "task5_student_001"
+        }
+    },
+    "overall_success": true
+}
