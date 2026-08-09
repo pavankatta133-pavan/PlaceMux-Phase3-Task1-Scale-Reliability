@@ -1,0 +1,20 @@
+{
+    "profile_type": "baseline",
+    "data_source": "real production-style prediction logs",
+    "total_requests": 5,
+    "successful_requests": 5,
+    "success_rate_percent": 100.0,
+    "logged_latency": {
+        "average_ms": 0.21,
+        "p95_ms": 0.2,
+        "minimum_ms": 0.13,
+        "maximum_ms": 0.41
+    },
+    "prediction_quality": {
+        "average_score": 56.666,
+        "minimum_score": 0.0,
+        "maximum_score": 100.0
+    },
+    "baseline_processing_time_ms": 0.0038,
+    "records_processed": 5
+}

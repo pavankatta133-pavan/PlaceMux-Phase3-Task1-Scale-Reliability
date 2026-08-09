@@ -1,0 +1,7 @@
+{
+    "status": "degraded",
+    "recommendation_available": false,
+    "error_code": "MODEL_UNAVAILABLE",
+    "message": "Recommendation model is temporarily unavailable. Please retry later.",
+    "fallback": "safe_response"
+}

@@ -1,0 +1,14 @@
+{
+    "cost_type": "estimated local compute proxy",
+    "warning": "This is an engineering estimate, not actual cloud billing.",
+    "cost_per_compute_second": 0.0001,
+    "baseline": {
+        "processing_ms": 0.0038,
+        "estimated_cost_per_request": 4e-10
+    },
+    "optimized": {
+        "processing_ms": 0.0026,
+        "estimated_cost_per_request": 3e-10
+    },
+    "estimated_saving_percent": 31.58
+}

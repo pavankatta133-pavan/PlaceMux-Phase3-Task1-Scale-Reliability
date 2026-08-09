@@ -1,0 +1,14 @@
+{
+    "profile_type": "optimized",
+    "data_source": "real production-style prediction logs",
+    "total_requests": 5,
+    "optimized_processing_time_ms": 0.0026,
+    "logged_average_latency_ms": 0.21,
+    "logged_p95_latency_ms": 0.2,
+    "prediction_quality": {
+        "average_score": 56.666,
+        "minimum_score": 0.0,
+        "maximum_score": 100.0
+    },
+    "records_processed": 5
+}
