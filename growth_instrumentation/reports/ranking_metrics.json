@@ -1,0 +1,25 @@
+{
+  "experiment_id": "exp_001",
+  "models": [
+    {
+      "model_version": "ranker_v1.0",
+      "impressions": 1001,
+      "clicks": 232,
+      "ctr_percent": 23.18,
+      "applications": 49,
+      "application_rate_percent": 4.9,
+      "shortlists": 8,
+      "shortlist_rate_percent": 0.8
+    },
+    {
+      "model_version": "ranker_v2.0",
+      "impressions": 1000,
+      "clicks": 231,
+      "ctr_percent": 23.1,
+      "applications": 50,
+      "application_rate_percent": 5.0,
+      "shortlists": 6,
+      "shortlist_rate_percent": 0.6
+    }
+  ]
+}

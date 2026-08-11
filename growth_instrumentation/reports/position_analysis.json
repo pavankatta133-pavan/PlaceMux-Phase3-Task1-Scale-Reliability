@@ -1,0 +1,132 @@
+{
+  "analysis": "Ranking Position Analysis",
+  "total_events": 2577,
+  "models_found": [
+    "ranker_v1.0",
+    "ranker_v2.0"
+  ],
+  "positions_found": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "position_metrics": [
+    {
+      "model_version": "ranker_v1.0",
+      "position": 1,
+      "impressions": 201,
+      "clicks": 64,
+      "ctr_percent": 31.84,
+      "applications": 13,
+      "application_rate_percent": 6.47,
+      "shortlists": 0,
+      "shortlist_rate_percent": 0.0
+    },
+    {
+      "model_version": "ranker_v1.0",
+      "position": 2,
+      "impressions": 200,
+      "clicks": 55,
+      "ctr_percent": 27.5,
+      "applications": 9,
+      "application_rate_percent": 4.5,
+      "shortlists": 2,
+      "shortlist_rate_percent": 1.0
+    },
+    {
+      "model_version": "ranker_v1.0",
+      "position": 3,
+      "impressions": 200,
+      "clicks": 46,
+      "ctr_percent": 23.0,
+      "applications": 7,
+      "application_rate_percent": 3.5,
+      "shortlists": 2,
+      "shortlist_rate_percent": 1.0
+    },
+    {
+      "model_version": "ranker_v1.0",
+      "position": 4,
+      "impressions": 200,
+      "clicks": 33,
+      "ctr_percent": 16.5,
+      "applications": 13,
+      "application_rate_percent": 6.5,
+      "shortlists": 3,
+      "shortlist_rate_percent": 1.5
+    },
+    {
+      "model_version": "ranker_v1.0",
+      "position": 5,
+      "impressions": 200,
+      "clicks": 34,
+      "ctr_percent": 17.0,
+      "applications": 7,
+      "application_rate_percent": 3.5,
+      "shortlists": 1,
+      "shortlist_rate_percent": 0.5
+    },
+    {
+      "model_version": "ranker_v2.0",
+      "position": 1,
+      "impressions": 200,
+      "clicks": 56,
+      "ctr_percent": 28.0,
+      "applications": 13,
+      "application_rate_percent": 6.5,
+      "shortlists": 2,
+      "shortlist_rate_percent": 1.0
+    },
+    {
+      "model_version": "ranker_v2.0",
+      "position": 2,
+      "impressions": 200,
+      "clicks": 47,
+      "ctr_percent": 23.5,
+      "applications": 10,
+      "application_rate_percent": 5.0,
+      "shortlists": 0,
+      "shortlist_rate_percent": 0.0
+    },
+    {
+      "model_version": "ranker_v2.0",
+      "position": 3,
+      "impressions": 200,
+      "clicks": 59,
+      "ctr_percent": 29.5,
+      "applications": 12,
+      "application_rate_percent": 6.0,
+      "shortlists": 2,
+      "shortlist_rate_percent": 1.0
+    },
+    {
+      "model_version": "ranker_v2.0",
+      "position": 4,
+      "impressions": 200,
+      "clicks": 33,
+      "ctr_percent": 16.5,
+      "applications": 8,
+      "application_rate_percent": 4.0,
+      "shortlists": 2,
+      "shortlist_rate_percent": 1.0
+    },
+    {
+      "model_version": "ranker_v2.0",
+      "position": 5,
+      "impressions": 200,
+      "clicks": 36,
+      "ctr_percent": 18.0,
+      "applications": 7,
+      "application_rate_percent": 3.5,
+      "shortlists": 0,
+      "shortlist_rate_percent": 0.0
+    }
+  ],
+  "invalid_positions": [],
+  "missing_model_versions": [],
+  "position_logging_complete": true,
+  "model_version_logging_complete": true,
+  "overall_success": true
+}

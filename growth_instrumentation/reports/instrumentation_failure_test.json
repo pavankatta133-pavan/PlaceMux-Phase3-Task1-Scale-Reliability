@@ -1,0 +1,35 @@
+{
+  "test": "Growth Instrumentation Failure / Degradation",
+  "request": {
+    "student_id": "task6_failure_student",
+    "job_id": "task6_failure_job",
+    "student_skills": [
+      "python",
+      "sql",
+      "machine learning"
+    ],
+    "job_skills": [
+      "python",
+      "sql",
+      "machine learning"
+    ]
+  },
+  "http_status": 200,
+  "latency_ms": 18.01,
+  "response": {
+    "explanation": "The recommendation score is based on the percentage of required job skills present in the student profile.",
+    "fallback": false,
+    "job_id": "task6_failure_job",
+    "latency_ms": 0.16,
+    "model_version": "phase3_matching_v1",
+    "predicted_score": 100.0,
+    "rank": 1,
+    "recommendation_available": true,
+    "request_id": "fb578350-477e-4fcd-b0d4-417905435316",
+    "status": "success",
+    "student_id": "task6_failure_student"
+  },
+  "instrumentation_failure_simulated": false,
+  "recommendation_available": true,
+  "overall_success": true
+}

@@ -1,0 +1,147 @@
+{
+  "validation": "Growth Instrumentation End-to-End Event Flow",
+  "total_events": 2577,
+  "unique_ranked_results": 2001,
+  "complete_journeys": 14,
+  "partial_journeys": 1987,
+  "event_presence": {
+    "impression": 2001,
+    "click": 463,
+    "application": 99,
+    "shortlist": 14
+  },
+  "invalid_events": [],
+  "sample_complete_journeys": [
+    {
+      "ranking_request_id": "96b089fd-f174-4acd-8b35-c82c5aca19d5",
+      "student_id": "student_009",
+      "job_id": "job_003",
+      "position": 4,
+      "model_version": "ranker_v1.0",
+      "event_sequence": [
+        "impression",
+        "click",
+        "application",
+        "shortlist"
+      ]
+    },
+    {
+      "ranking_request_id": "ac5cc388-0e4c-493f-a6ee-df41638fde41",
+      "student_id": "student_010",
+      "job_id": "job_005",
+      "position": 3,
+      "model_version": "ranker_v1.0",
+      "event_sequence": [
+        "impression",
+        "click",
+        "application",
+        "shortlist"
+      ]
+    },
+    {
+      "ranking_request_id": "5bd4e5c1-b393-4b94-8b74-52e114023789",
+      "student_id": "student_005",
+      "job_id": "job_004",
+      "position": 5,
+      "model_version": "ranker_v1.0",
+      "event_sequence": [
+        "impression",
+        "click",
+        "application",
+        "shortlist"
+      ]
+    },
+    {
+      "ranking_request_id": "eab442d1-8a11-4b6a-a3f3-0af117179a49",
+      "student_id": "student_007",
+      "job_id": "job_005",
+      "position": 4,
+      "model_version": "ranker_v1.0",
+      "event_sequence": [
+        "impression",
+        "click",
+        "application",
+        "shortlist"
+      ]
+    },
+    {
+      "ranking_request_id": "4df297e2-1134-4f64-9d95-5d2540efc87a",
+      "student_id": "student_001",
+      "job_id": "job_003",
+      "position": 2,
+      "model_version": "ranker_v1.0",
+      "event_sequence": [
+        "impression",
+        "click",
+        "application",
+        "shortlist"
+      ]
+    },
+    {
+      "ranking_request_id": "4f1e675e-6f40-414a-9592-7aeb4c00a60d",
+      "student_id": "student_008",
+      "job_id": "job_001",
+      "position": 3,
+      "model_version": "ranker_v2.0",
+      "event_sequence": [
+        "impression",
+        "click",
+        "application",
+        "shortlist"
+      ]
+    },
+    {
+      "ranking_request_id": "09c67fd6-2f6e-4dee-85b3-bfa8fd7068be",
+      "student_id": "student_005",
+      "job_id": "job_002",
+      "position": 4,
+      "model_version": "ranker_v2.0",
+      "event_sequence": [
+        "impression",
+        "click",
+        "application",
+        "shortlist"
+      ]
+    },
+    {
+      "ranking_request_id": "02a7ab08-4dd9-4f76-b53b-5393c1dbf815",
+      "student_id": "student_009",
+      "job_id": "job_005",
+      "position": 4,
+      "model_version": "ranker_v1.0",
+      "event_sequence": [
+        "impression",
+        "click",
+        "application",
+        "shortlist"
+      ]
+    },
+    {
+      "ranking_request_id": "6ed7bb6d-fcda-42db-bca4-d00ecfcbb04c",
+      "student_id": "student_008",
+      "job_id": "job_001",
+      "position": 3,
+      "model_version": "ranker_v1.0",
+      "event_sequence": [
+        "impression",
+        "click",
+        "application",
+        "shortlist"
+      ]
+    },
+    {
+      "ranking_request_id": "95dff22e-863c-422f-8423-e3982d4d66e6",
+      "student_id": "student_003",
+      "job_id": "job_001",
+      "position": 2,
+      "model_version": "ranker_v1.0",
+      "event_sequence": [
+        "impression",
+        "click",
+        "application",
+        "shortlist"
+      ]
+    }
+  ],
+  "overall_success": true
+}
