@@ -14,6 +14,8 @@ sys.path.insert(0, PROJECT_ROOT)
 from flask import Flask, request, jsonify
 
 from post_launch_health.logger import log_prediction
+from cold_start.recommender import recommend_jobs
+from cold_start.fallback import fallback_recommendations
 
 
 app = Flask(__name__)
@@ -622,6 +624,110 @@ def recommendation_explanation():
         "model_version":
             MODEL_VERSION
     })
+@app.route(
+    "/api/cold-start/recommendations",
+    methods=["POST"]
+)
+def cold_start_recommendations():
+
+    data = request.get_json(
+        silent=True
+    )
+
+    if not data:
+        return jsonify({
+            "status": "error",
+            "error_code": "INVALID_REQUEST",
+            "message": "JSON request body is required.",
+            "recommendation_available": False
+        }), 400
+
+    student_id = data.get(
+        "student_id"
+    )
+
+    skills = data.get(
+        "skills",
+        []
+    )
+
+    preferred_roles = data.get(
+        "preferred_roles",
+        []
+    )
+
+    jobs = data.get(
+        "jobs",
+        []
+    )
+
+    if not student_id:
+        return jsonify({
+            "status": "error",
+            "error_code": "MISSING_STUDENT_ID",
+            "message": "student_id is required.",
+            "recommendation_available": False
+        }), 400
+
+    if not isinstance(skills, list):
+        return jsonify({
+            "status": "error",
+            "error_code": "INVALID_SKILLS",
+            "message": "skills must be a list.",
+            "recommendation_available": False
+        }), 400
+
+    if not isinstance(jobs, list):
+        return jsonify({
+            "status": "error",
+            "error_code": "INVALID_JOBS",
+            "message": "jobs must be a list.",
+            "recommendation_available": False
+        }), 400
+
+    try:
+
+        recommendations = recommend_jobs(
+            candidate_skills=skills,
+            jobs=jobs,
+            preferred_roles=preferred_roles,
+            top_k=5
+        )
+
+        return jsonify({
+            "status": "success",
+            "student_id": student_id,
+            "cold_start": True,
+            "recommendation_available": True,
+            "fallback": False,
+            "recommendations": recommendations
+        }), 200
+
+    except Exception as error:
+
+        print(
+            "Cold-start recommender failed:",
+            error
+        )
+
+        recommendations = fallback_recommendations(
+            jobs=jobs,
+            top_k=5
+        )
+
+        return jsonify({
+            "status": "success",
+            "student_id": student_id,
+            "cold_start": True,
+            "recommendation_available": bool(
+                recommendations
+            ),
+            "fallback": True,
+            "recommendations": recommendations,
+            "message":
+                "Cold-start recommender unavailable. "
+                "Fallback recommendations returned."
+        }), 200
 
 
 if __name__ == "__main__":

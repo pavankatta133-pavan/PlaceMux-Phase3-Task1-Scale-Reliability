@@ -1,0 +1,32 @@
+{
+  "experiment_id": "task7_cold_start_exp_001",
+  "experiment": "Cold-Start Control vs Variant",
+  "random_seed": 42,
+  "data_source": "C:\\projects\\Sprint A - Scale & Reliability project\\cold_start\\reports\\task7_experiment_events.jsonl",
+  "baseline": {
+    "model": "ranker_v1.0",
+    "metrics": {
+      "impressions": 100,
+      "clicks": 66,
+      "applications": 15,
+      "shortlists": 8,
+      "relevant_actions": 89,
+      "relevant_action_rate_percent": 89.0
+    }
+  },
+  "variant": {
+    "model": "cold_start_ranker_v1",
+    "metrics": {
+      "impressions": 100,
+      "clicks": 55,
+      "applications": 20,
+      "shortlists": 12,
+      "relevant_actions": 87,
+      "relevant_action_rate_percent": 87.0
+    }
+  },
+  "lift": {
+    "first_session_relevant_action_rate_lift_percent": -2.25
+  },
+  "interpretation": "The variant uses the cold-start recommendation strategy and is compared against a reproducible control group."
+}
