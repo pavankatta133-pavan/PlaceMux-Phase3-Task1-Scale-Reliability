@@ -6,3 +6,4 @@ __pycache__/
 .env
 post_launch_health/logs/*.csv
 "@ | Set-Content .gitignore
+task_files.zip
