@@ -1,0 +1,11 @@
+{"experiment_id": "task10_growth_model_ab_001", "student_id": "student-001", "group": "variant", "model_version": "ranker_v2.0", "impressions": 1, "relevant_actions": 0}
+{"experiment_id": "task10_growth_model_ab_001", "student_id": "student_001", "group": "variant", "model_version": "ranker_v2.0", "impressions": 205, "relevant_actions": 72}
+{"experiment_id": "task10_growth_model_ab_001", "student_id": "student_009", "group": "control", "model_version": "ranker_v1.0", "impressions": 250, "relevant_actions": 78}
+{"experiment_id": "task10_growth_model_ab_001", "student_id": "student_005", "group": "control", "model_version": "ranker_v1.0", "impressions": 185, "relevant_actions": 54}
+{"experiment_id": "task10_growth_model_ab_001", "student_id": "student_008", "group": "variant", "model_version": "ranker_v2.0", "impressions": 215, "relevant_actions": 62}
+{"experiment_id": "task10_growth_model_ab_001", "student_id": "student_006", "group": "control", "model_version": "ranker_v1.0", "impressions": 235, "relevant_actions": 75}
+{"experiment_id": "task10_growth_model_ab_001", "student_id": "student_003", "group": "variant", "model_version": "ranker_v2.0", "impressions": 180, "relevant_actions": 53}
+{"experiment_id": "task10_growth_model_ab_001", "student_id": "student_007", "group": "control", "model_version": "ranker_v1.0", "impressions": 185, "relevant_actions": 44}
+{"experiment_id": "task10_growth_model_ab_001", "student_id": "student_010", "group": "control", "model_version": "ranker_v1.0", "impressions": 230, "relevant_actions": 47}
+{"experiment_id": "task10_growth_model_ab_001", "student_id": "student_002", "group": "variant", "model_version": "ranker_v2.0", "impressions": 180, "relevant_actions": 47}
+{"experiment_id": "task10_growth_model_ab_001", "student_id": "student_004", "group": "variant", "model_version": "ranker_v2.0", "impressions": 135, "relevant_actions": 44}

@@ -1,0 +1,39 @@
+{
+  "experiment_id": "task10_growth_model_ab_001",
+  "hypothesis": "ranker_v2.0 will improve relevant-action rate by at least 5% compared with ranker_v1.0.",
+  "primary_metric": "relevant_action_rate",
+  "control": {
+    "impressions": 1085,
+    "relevant_actions": 298,
+    "relevant_action_rate": 0.2747
+  },
+  "variant": {
+    "impressions": 916,
+    "relevant_actions": 278,
+    "relevant_action_rate": 0.3035
+  },
+  "effect_size": {
+    "absolute_difference": 0.0288,
+    "relative_lift_percent": 10.5
+  },
+  "statistical_significance": {
+    "z_score": 1.4195,
+    "p_value": 0.155741,
+    "alpha": 0.05,
+    "statistically_significant": false
+  },
+  "confidence_interval_95_percent": {
+    "lower": -0.0111,
+    "upper": 0.0687
+  },
+  "guardrails": {
+    "sample_size_ready": true,
+    "minimum_lift_pass": true,
+    "safety_rate_pass": false,
+    "negative_lift_detected": false,
+    "guardrails_pass": false
+  },
+  "decision": "DO NOT SHIP",
+  "reason": "result is not statistically significant; variant failed safety guardrails",
+  "honest_readout": true
+}
