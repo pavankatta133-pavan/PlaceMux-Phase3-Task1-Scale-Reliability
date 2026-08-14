@@ -1,0 +1,51 @@
+{
+  "experiment_id": "task9_ranker_experiment_001",
+  "experiment": "Ranker V1 vs V2",
+  "feature_flag": {
+    "enabled": true,
+    "variant_percent": 10,
+    "control_model": "ranker_v1.0",
+    "variant_model": "ranker_v2.0"
+  },
+  "metrics": {
+    "control": {
+      "impressions": 152,
+      "relevant_actions": 127,
+      "relevant_action_rate": 0.8355
+    },
+    "variant": {
+      "impressions": 27,
+      "relevant_actions": 22,
+      "relevant_action_rate": 0.8148
+    },
+    "holdout": {
+      "impressions": 21,
+      "relevant_actions": 15,
+      "relevant_action_rate": 0.7143
+    }
+  },
+  "guardrail": {
+    "control": {
+      "impressions": 152,
+      "relevant_actions": 127,
+      "relevant_action_rate": 0.8355
+    },
+    "variant": {
+      "impressions": 27,
+      "relevant_actions": 22,
+      "relevant_action_rate": 0.8148
+    },
+    "lift_percent": -2.48,
+    "thresholds": {
+      "min_sample_size": 50,
+      "max_negative_lift_percent": -5.0,
+      "min_relevant_action_rate": 0.5
+    },
+    "sample_size_ready": false,
+    "decision": "CONTINUE",
+    "reason": "Insufficient sample size for guardrail decision.",
+    "experiment_halted": false
+  },
+  "decision": "CONTINUE",
+  "experiment_halted": false
+}
