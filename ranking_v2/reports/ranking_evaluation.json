@@ -1,0 +1,43 @@
+{
+  "task": "Phase 3 Task 11",
+  "evaluation_type": "per-student offline ranking evaluation",
+  "total_records": 51,
+  "ranking_queries": 10,
+  "evaluated_queries": 10,
+  "baseline": {
+    "ndcg@5": 0.9608076151360047,
+    "ndcg@10": 0.9608076151360047,
+    "map@5": 1.0,
+    "map@10": 1.0
+  },
+  "ltr_ranker_v2": {
+    "ndcg@5": 1.0,
+    "ndcg@10": 1.0,
+    "map@5": 1.0,
+    "map@10": 1.0
+  },
+  "improvement_percent": {
+    "ndcg@5": 4.08,
+    "ndcg@10": 4.08,
+    "map@5": 0.0,
+    "map@10": 0.0
+  },
+  "primary_metric": "nDCG",
+  "secondary_metrics": [
+    "MAP@5",
+    "MAP@10"
+  ],
+  "position_bias_correction": true,
+  "dataset_note": "The dataset contains graded relevance labels and relatively few label-0 records. Therefore nDCG is used as the primary ranking-quality metric.",
+  "metrics": {
+    "ndcg@5_improved": true,
+    "ndcg@10_improved": true,
+    "ndcg@5_not_worse": true,
+    "ndcg@10_not_worse": true,
+    "map@5_improved": false,
+    "map@10_improved": false
+  },
+  "decision": "PASS",
+  "reason": "LTR improved at least one primary nDCG metric without reducing the other.",
+  "evaluation_pass": true
+}

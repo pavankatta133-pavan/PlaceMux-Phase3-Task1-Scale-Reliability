@@ -1,0 +1,29 @@
+{
+  "task": "Phase 3 Task 11",
+  "model": "GradientBoostingRegressor",
+  "purpose": "Learning-to-Rank relevance scoring",
+  "records": 51,
+  "training_records": 38,
+  "validation_records": 13,
+  "features": [
+    "impressions",
+    "clicks",
+    "applications",
+    "shortlists",
+    "avg_position",
+    "click_rate",
+    "application_rate",
+    "shortlist_rate",
+    "position_weight"
+  ],
+  "relevance_labels": [
+    0.0,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "position_bias_correction": true,
+  "weighted_training": true,
+  "validation_mse": 1.2e-05,
+  "model_file": "C:\\projects\\Sprint A - Scale & Reliability project\\ranking_v2\\models\\ltr_ranker.pkl"
+}
