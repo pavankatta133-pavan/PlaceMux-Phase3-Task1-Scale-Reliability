@@ -1,0 +1,26 @@
+{
+  "task": "Phase 3 Task 8 - Churn Prediction",
+  "dataset_records": 11,
+  "training_records": 7,
+  "testing_records": 4,
+  "churn_samples": 2,
+  "engaged_samples": 9,
+  "features": [
+    "impressions",
+    "clicks",
+    "applications",
+    "shortlists",
+    "ctr",
+    "application_rate",
+    "shortlist_rate"
+  ],
+  "model": "RandomForestClassifier",
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0
+  },
+  "limitation": "The dataset contains only 11 users and 2 at-risk samples, so evaluation metrics are indicative rather than statistically robust."
+}

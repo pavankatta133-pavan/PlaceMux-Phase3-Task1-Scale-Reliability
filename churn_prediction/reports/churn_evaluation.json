@@ -1,0 +1,28 @@
+{
+  "task": "Phase 3 Task 8 - Churn Prediction Evaluation",
+  "dataset_records": 11,
+  "at_risk_users": 2,
+  "engaged_users": 9,
+  "model": "RandomForestClassifier",
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "average_precision": 1.0
+  },
+  "baseline": {
+    "strategy": "Predict all users as engaged",
+    "accuracy": 0.8182,
+    "recall": 0.0
+  },
+  "lift": {
+    "accuracy_lift_percent": 22.22
+  },
+  "artifacts": {
+    "model": "C:\\projects\\Sprint A - Scale & Reliability project\\churn_prediction\\models\\churn_model.pkl",
+    "precision_recall_curve": "C:\\projects\\Sprint A - Scale & Reliability project\\churn_prediction\\reports\\precision_recall_curve.png"
+  },
+  "limitation": "The dataset contains only 11 users and 2 at-risk samples. Therefore, evaluation results are indicative and should not be considered statistically robust."
+}
