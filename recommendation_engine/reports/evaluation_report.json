@@ -1,0 +1,24 @@
+{
+  "task": "Phase 3 Task 12",
+  "dataset_records": 51,
+  "students": 11,
+  "jobs": 6,
+  "k": 5,
+  "baseline": {
+    "system": "Popularity Baseline",
+    "precision_at_5": 0.9091,
+    "coverage": 0.8333,
+    "diversity": 0.0909
+  },
+  "personalized": {
+    "system": "Personalized Recommendation Engine",
+    "precision_at_5": 0.9091,
+    "coverage": 0.8333,
+    "diversity": 0.0909
+  },
+  "improvement": {
+    "precision_at_5": 0.0,
+    "coverage": 0.0,
+    "diversity": 0.0
+  }
+}
