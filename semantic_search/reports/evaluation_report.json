@@ -1,0 +1,15 @@
+{
+  "query_count": 6,
+  "keyword_search": {
+    "precision_at_3": 0.5,
+    "recall_at_3": 1.0
+  },
+  "semantic_search": {
+    "precision_at_3": 0.5,
+    "recall_at_3": 1.0
+  },
+  "hybrid_search": {
+    "precision_at_3": 0.5,
+    "recall_at_3": 1.0
+  }
+}

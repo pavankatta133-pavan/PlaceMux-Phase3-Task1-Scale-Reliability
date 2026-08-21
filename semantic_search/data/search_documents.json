@@ -1,0 +1,86 @@
+[
+  {
+    "document_id": "doc_0001",
+    "job_id": "job_001",
+    "document_type": "job",
+    "title": "Python Backend Developer",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "REST API",
+      "SQL",
+      "Git"
+    ],
+    "text": "Python Backend Developer. Skills: Python, FastAPI, REST API, SQL, Git. Develop backend applications and REST APIs using Python and FastAPI. Work with SQL databases, application services, debugging, testing, and Git-based development."
+  },
+  {
+    "document_id": "doc_0002",
+    "job_id": "job_002",
+    "document_type": "job",
+    "title": "Machine Learning Engineer",
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy"
+    ],
+    "text": "Machine Learning Engineer. Skills: Python, Machine Learning, Scikit-learn, Pandas, NumPy. Build and evaluate machine learning models using Python. Work on data preprocessing, feature engineering, model training, evaluation, and machine learning pipelines using common Python data science libraries."
+  },
+  {
+    "document_id": "doc_0003",
+    "job_id": "job_003",
+    "document_type": "job",
+    "title": "AI and Deep Learning Engineer",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "CNN",
+      "Deep Learning"
+    ],
+    "text": "AI and Deep Learning Engineer. Skills: Python, TensorFlow, Keras, CNN, Deep Learning. Develop artificial intelligence and deep learning solutions using Python, TensorFlow, and Keras. Work with neural networks, computer vision, model training, evaluation, and deployment."
+  },
+  {
+    "document_id": "doc_0004",
+    "job_id": "job_004",
+    "document_type": "job",
+    "title": "Data Analyst",
+    "skills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "Data Analysis",
+      "Power BI"
+    ],
+    "text": "Data Analyst. Skills: Python, SQL, Pandas, Data Analysis, Power BI. Analyze business data using Python, SQL, and Pandas. Create reports and dashboards, identify trends, clean datasets, and communicate analytical insights using visualization and business intelligence tools."
+  },
+  {
+    "document_id": "doc_0005",
+    "job_id": "job_005",
+    "document_type": "job",
+    "title": "AI/ML Developer",
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "FastAPI",
+      "Model Deployment"
+    ],
+    "text": "AI/ML Developer. Skills: Python, Machine Learning, Deep Learning, FastAPI, Model Deployment. Design and deploy AI and machine learning applications using Python. Work across data preprocessing, machine learning, deep learning, APIs, model serving, evaluation, and production deployment."
+  },
+  {
+    "document_id": "doc_0006",
+    "job_id": "job_006",
+    "document_type": "job",
+    "title": "Software Engineer",
+    "skills": [
+      "Python",
+      "Java",
+      "SQL",
+      "Git",
+      "Software Development"
+    ],
+    "text": "Software Engineer. Skills: Python, Java, SQL, Git, Software Development. Develop reliable software applications using programming languages such as Python and Java. Work with SQL databases, version control, testing, debugging, and general software engineering practices."
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "model_name": "all-MiniLM-L6-v2",
+  "document_count": 6,
+  "embedding_dimension": 384,
+  "document_ids": [
+    "doc_0001",
+    "doc_0002",
+    "doc_0003",
+    "doc_0004",
+    "doc_0005",
+    "doc_0006"
+  ],
+  "job_ids": [
+    "job_001",
+    "job_002",
+    "job_003",
+    "job_004",
+    "job_005",
+    "job_006"
+  ]
+}

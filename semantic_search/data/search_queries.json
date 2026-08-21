@@ -1,0 +1,47 @@
+[
+  {
+    "query_id": "query_001",
+    "query": "Python backend developer FastAPI REST API SQL",
+    "relevant_job_ids": [
+      "job_001",
+      "job_005"
+    ]
+  },
+  {
+    "query_id": "query_002",
+    "query": "machine learning Python data preprocessing model training",
+    "relevant_job_ids": [
+      "job_002",
+      "job_005"
+    ]
+  },
+  {
+    "query_id": "query_003",
+    "query": "deep learning TensorFlow Keras neural networks computer vision",
+    "relevant_job_ids": [
+      "job_003",
+      "job_005"
+    ]
+  },
+  {
+    "query_id": "query_004",
+    "query": "Python SQL data analysis Pandas dashboards",
+    "relevant_job_ids": [
+      "job_004"
+    ]
+  },
+  {
+    "query_id": "query_005",
+    "query": "AI machine learning model deployment Python FastAPI",
+    "relevant_job_ids": [
+      "job_005"
+    ]
+  },
+  {
+    "query_id": "query_006",
+    "query": "Java Python SQL software engineering Git",
+    "relevant_job_ids": [
+      "job_006"
+    ]
+  }
+]
