@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "document_count": 6,
+    "average_text_length": 300.0
+  },
+  "current": {
+    "document_count": 6,
+    "average_text_length": 271.6667
+  },
+  "features": {
+    "document_count": {
+      "baseline": 6,
+      "current": 6,
+      "change_ratio": 0.0,
+      "threshold": 0.2,
+      "drift_detected": false
+    },
+    "average_text_length": {
+      "baseline": 300.0,
+      "current": 271.6667,
+      "change_ratio": 0.0944,
+      "threshold": 0.2,
+      "drift_detected": false
+    }
+  },
+  "drift_detected": false,
+  "retraining_trigger": false
+}
