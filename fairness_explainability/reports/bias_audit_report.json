@@ -1,0 +1,26 @@
+{
+  "audit_scope": "candidate matching decisions",
+  "fairness_metrics": {
+    "demographic_parity_ratio": "selection rate of comparison group divided by reference group",
+    "equal_opportunity_gap": "absolute difference in true positive rate"
+  },
+  "group_metrics": {
+    "A": {
+      "count": 5,
+      "selection_rate": 0.6,
+      "true_positive_rate": 0.6
+    },
+    "B": {
+      "count": 5,
+      "selection_rate": 0.2,
+      "true_positive_rate": 0.2
+    }
+  },
+  "fairness_comparisons": {
+    "B": {
+      "reference_group": "A",
+      "demographic_parity_ratio": 0.3333,
+      "equal_opportunity_gap": 0.4
+    }
+  }
+}
